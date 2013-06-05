@@ -1,4 +1,4 @@
-NSLocale category to get an ISO639.2 language identifier code
+# NSLocale category to get an ISO639.2 language identifier code
 
 Example usage: 
 
