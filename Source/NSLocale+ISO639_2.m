@@ -1,6 +1,6 @@
 // NSLocale+ISO639_2.m
 //
-// NSLocale category to get an ISO 639.2 language identifier
+// NSLocale category to get an ISO 639.2 language code
 //
 // The MIT License (MIT)
 //
@@ -31,24 +31,28 @@
 
 + (NSDictionary *)ISO639_2Dictionary
 {
+    static dispatch_once_t onceToken;
     static NSDictionary *sISO639_2Dictionary = nil;
     
-    if (!sISO639_2Dictionary) {
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"iso639_1_to_iso639_2" ofType:@"plist"];
-        sISO639_2Dictionary = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    }
+    dispatch_once(&onceToken, ^{
+        NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"iso639_2" withExtension:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+        NSString *plistPath = [bundle pathForResource:@"iso639_1_to_iso639_2" ofType:@"plist"];
+        
+        sISO639_2Dictionary = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    });
     
     return sISO639_2Dictionary;
 }
 
-- (NSString *)ISO639_2LanguageIdentifier
+- (NSString *)ISO639_2LanguageCode
 {
-    NSString *languageCode = [self objectForKey:NSLocaleLanguageCode];
-    NSString *ISO639_2String = [[[self class] ISO639_2Dictionary] objectForKey:languageCode];
+    NSString *ISO639_1LanguageCode = [self objectForKey:NSLocaleLanguageCode];
+    NSString *ISO639_2LanguageCode = [[[self class] ISO639_2Dictionary] objectForKey:ISO639_1LanguageCode];
     
-    if (!ISO639_2String) return languageCode;
+    if (!ISO639_2LanguageCode) return ISO639_1LanguageCode;
     
-    return ISO639_2String;
+    return ISO639_2LanguageCode;
 }
 
 @end

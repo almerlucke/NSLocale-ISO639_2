@@ -1,6 +1,6 @@
 // NSLocale+ISO639_2.h
 //
-// NSLocale category to get an ISO 639.2 language identifier
+// NSLocale category to get an ISO 639.2 language code
 //
 // The MIT License (MIT)
 //
@@ -29,6 +29,6 @@
 
 @interface NSLocale (ISO639_2)
 
-- (NSString *)ISO639_2LanguageIdentifier;
+- (NSString *)ISO639_2LanguageCode;
 
 @end

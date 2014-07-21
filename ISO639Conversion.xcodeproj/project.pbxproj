@@ -20,7 +20,6 @@
 		CB8D59C2175F825100863C3D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB8D59C1175F825100863C3D /* Default-568h@2x.png */; };
 		CB8D59C5175F825100863C3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8D59C4175F825100863C3D /* ViewController.m */; };
 		CB8D59C8175F825100863C3D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8D59C6175F825100863C3D /* ViewController.xib */; };
-		CB8D59E7175F840A00863C3D /* iso639_1_to_iso639_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB8D59E6175F840A00863C3D /* iso639_1_to_iso639_2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		CB8D59D6175F836E00863C3D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CB8D59D7175F836E00863C3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CB8D59D8175F836E00863C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CB8D59E6175F840A00863C3D /* iso639_1_to_iso639_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iso639_1_to_iso639_2.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 		CB8D59B2175F825100863C3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB8D59E6175F840A00863C3D /* iso639_1_to_iso639_2.plist */,
 				CB8D59B3175F825100863C3D /* ISO639Conversion-Info.plist */,
 				CB8D59B4175F825100863C3D /* InfoPlist.strings */,
 				CB8D59B7175F825100863C3D /* main.m */,
@@ -207,7 +204,6 @@
 				CB8D59C0175F825100863C3D /* Default@2x.png in Resources */,
 				CB8D59C2175F825100863C3D /* Default-568h@2x.png in Resources */,
 				CB8D59C8175F825100863C3D /* ViewController.xib in Resources */,
-				CB8D59E7175F840A00863C3D /* iso639_1_to_iso639_2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
