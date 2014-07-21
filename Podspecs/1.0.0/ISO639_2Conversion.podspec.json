@@ -1,0 +1,20 @@
+{
+  "name": "NSLocale+ISO639_2",
+  "version": "1.0.0",
+  "summary": "iOS NSLocale ISO639.2 language code category",
+  "description": "Category on NSLocale to get an ISO639.2 language code",
+  "homepage": "https://github.com/lickylick/NSLocale-ISO639_2",
+  "license": "MIT",
+  "authors": {
+    "Almer Lucke": "almer.lucke@gmail.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/lickylick/NSLocale-ISO639_2.git",
+    "tag": "v1.0.0"
+  },
+  "source_files": "*",
+  "requires_arc": true
+}

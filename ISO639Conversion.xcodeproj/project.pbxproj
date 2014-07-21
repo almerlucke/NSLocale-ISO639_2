@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB851852197D7F0900311FC4 /* NSLocale+ISO639_2.m in Sources */ = {isa = PBXBuildFile; fileRef = CB851851197D7F0900311FC4 /* NSLocale+ISO639_2.m */; };
+		CB851855197D7F6F00311FC4 /* iso639_2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CB851854197D7F6F00311FC4 /* iso639_2.bundle */; };
 		CB8D59AC175F825100863C3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8D59AB175F825100863C3D /* UIKit.framework */; };
 		CB8D59AE175F825100863C3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8D59AD175F825100863C3D /* Foundation.framework */; };
 		CB8D59B0175F825100863C3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8D59AF175F825100863C3D /* CoreGraphics.framework */; };
@@ -18,11 +20,13 @@
 		CB8D59C2175F825100863C3D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB8D59C1175F825100863C3D /* Default-568h@2x.png */; };
 		CB8D59C5175F825100863C3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8D59C4175F825100863C3D /* ViewController.m */; };
 		CB8D59C8175F825100863C3D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8D59C6175F825100863C3D /* ViewController.xib */; };
-		CB8D59E5175F83F500863C3D /* NSLocale+ISO639_2.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8D59E4175F83F500863C3D /* NSLocale+ISO639_2.m */; };
 		CB8D59E7175F840A00863C3D /* iso639_1_to_iso639_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB8D59E6175F840A00863C3D /* iso639_1_to_iso639_2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB851850197D7F0900311FC4 /* NSLocale+ISO639_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLocale+ISO639_2.h"; sourceTree = "<group>"; };
+		CB851851197D7F0900311FC4 /* NSLocale+ISO639_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLocale+ISO639_2.m"; sourceTree = "<group>"; };
+		CB851854197D7F6F00311FC4 /* iso639_2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iso639_2.bundle; sourceTree = "<group>"; };
 		CB8D59A8175F825100863C3D /* ISO639Conversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISO639Conversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8D59AB175F825100863C3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CB8D59AD175F825100863C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,8 +47,6 @@
 		CB8D59D6175F836E00863C3D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CB8D59D7175F836E00863C3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CB8D59D8175F836E00863C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CB8D59E3175F83F500863C3D /* NSLocale+ISO639_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLocale+ISO639_2.h"; sourceTree = "<group>"; };
-		CB8D59E4175F83F500863C3D /* NSLocale+ISO639_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLocale+ISO639_2.m"; sourceTree = "<group>"; };
 		CB8D59E6175F840A00863C3D /* iso639_1_to_iso639_2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iso639_1_to_iso639_2.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,9 +64,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB85184F197D7EEC00311FC4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB851850197D7F0900311FC4 /* NSLocale+ISO639_2.h */,
+				CB851851197D7F0900311FC4 /* NSLocale+ISO639_2.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CB851853197D7F5B00311FC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB851854197D7F6F00311FC4 /* iso639_2.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CB8D599F175F825100863C3D = {
 			isa = PBXGroup;
 			children = (
+				CB851853197D7F5B00311FC4 /* Resources */,
+				CB85184F197D7EEC00311FC4 /* Source */,
 				CB8D59B1175F825100863C3D /* ISO639Conversion */,
 				CB8D59AA175F825100863C3D /* Frameworks */,
 				CB8D59A9175F825100863C3D /* Products */,
@@ -94,8 +115,6 @@
 		CB8D59B1175F825100863C3D /* ISO639Conversion */ = {
 			isa = PBXGroup;
 			children = (
-				CB8D59E3175F83F500863C3D /* NSLocale+ISO639_2.h */,
-				CB8D59E4175F83F500863C3D /* NSLocale+ISO639_2.m */,
 				CB8D59BA175F825100863C3D /* AppDelegate.h */,
 				CB8D59BB175F825100863C3D /* AppDelegate.m */,
 				CB8D59C3175F825100863C3D /* ViewController.h */,
@@ -182,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB851855197D7F6F00311FC4 /* iso639_2.bundle in Resources */,
 				CB8D59B6175F825100863C3D /* InfoPlist.strings in Resources */,
 				CB8D59BE175F825100863C3D /* Default.png in Resources */,
 				CB8D59C0175F825100863C3D /* Default@2x.png in Resources */,
@@ -198,10 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB851852197D7F0900311FC4 /* NSLocale+ISO639_2.m in Sources */,
 				CB8D59B8175F825100863C3D /* main.m in Sources */,
 				CB8D59BC175F825100863C3D /* AppDelegate.m in Sources */,
 				CB8D59C5175F825100863C3D /* ViewController.m in Sources */,
-				CB8D59E5175F83F500863C3D /* NSLocale+ISO639_2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +350,7 @@
 				CB8D59CD175F825100863C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

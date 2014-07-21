@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	
-    [[NSLocale currentLocale] ISO639_2LanguageIdentifier];
+    NSLog(@"%@", [[NSLocale currentLocale] ISO639_2LanguageIdentifier]);
 }
 
 - (void)didReceiveMemoryWarning
